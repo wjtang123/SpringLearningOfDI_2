@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <context:component-scan base-package="test"></context:component-scan>
+
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+
+
+<!--    <bean id="student" class="test.Student">-->
+<!--        &lt;!&ndash; 依赖注入（setter注入，即通过javabean属性进行注入 &ndash;&gt;-->
+<!--        <property name="name" value="小明"></property>-->
+<!--        <property name="homework" ref="homework"></property>-->
+
+<!--        &lt;!&ndash; 依赖注入（constructor-arg注入，即通过构造器参数属性进行注入 &ndash;&gt;-->
+<!--        &lt;!&ndash;    <constructor-arg name="homework" ref="homework"></constructor-arg>&ndash;&gt;-->
+<!--        &lt;!&ndash;    <constructor-arg name="name" value="小红"></constructor-arg>&ndash;&gt;-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash; 让Spring管理Homework bean&ndash;&gt;-->
+<!--    <bean id="homework" class="test.Homework">-->
+<!--        <property name="content" value="正在做作业,勿扰..."></property>-->
+<!--    </bean>-->
+
+
+</beans>
