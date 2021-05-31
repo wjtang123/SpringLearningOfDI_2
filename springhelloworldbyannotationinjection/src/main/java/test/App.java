@@ -10,7 +10,7 @@ public class App {
         Student student = context.getBean(Student.class);
 
         System.out.println(student.getName()+"准备做作业了");
-        student.doHomeWork(); //aop会自动扩充doHomeWork(),具体的扩充位置等细节见容器对应的配置文件
+        student.doHomeWork(); //aop会自动扩充doHomeWork(),具体的扩充位置等细节见容器对应的配置文件 或 注解
 
         context.close();
 
